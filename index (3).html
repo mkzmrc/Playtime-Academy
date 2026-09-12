@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évaluation – Playtime Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.5; padding: 40px 20px; }
+    .toolbar { position: fixed; top: 16px; right: 16px; display: flex; gap: 10px; z-index: 100; }
+    .btn { padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; border: none; cursor: pointer; font-family: inherit; }
+    .btn-print { background: #3b82f6; color: white; }
+    .btn-back { background: #e2e8f0; color: #1e293b; }
+    .page { max-width: 800px; margin: 0 auto; background: white; padding: 36px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 22px; text-align: center; margin-bottom: 4px; }
+    .subtitle { text-align: center; color: #64748b; margin-bottom: 20px; font-size: 13px; }
+    .info { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 20px; font-size: 13px; flex-wrap: wrap; }
+    .info span { border-bottom: 1px solid #cbd5e1; min-width: 140px; display: inline-block; }
+    .part { background: #eff6ff; padding: 8px 12px; border-radius: 6px; font-weight: 700; font-size: 14px; color: #1e40af; margin: 20px 0 12px; }
+    .part.green { background: #f0fdf4; color: #166534; }
+    .part.purple { background: #faf5ff; color: #6b21a8; }
+    .q { font-size: 13px; margin: 12px 0 4px; font-weight: 600; }
+    .answer { border-bottom: 1px solid #e2e8f0; height: 24px; margin-bottom: 4px; }
+    .total { margin-top: 24px; font-weight: 700; font-size: 15px; }
+    .apprec { margin-top: 12px; font-size: 13px; }
+    @media print {
+      body { background: white; padding: 0; }
+      .toolbar { display: none; }
+      .page { box-shadow: none; padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html" class="btn btn-back">← Retour</a>
+    <button onclick="window.print()" class="btn btn-print">🖨 Imprimer</button>
+  </div>
+  <div class="page">
+    <h1>ÉVALUATION – POPPY PLAYTIME</h1>
+    <p class="subtitle">Connaissance & Analyse • Playtime Academy</p>
+    <div class="info">
+      <div>Nom : <span></span></div>
+      <div>Classe : <span></span></div>
+      <div>Date : <span></span></div>
+      <div>Note : <span></span> / 20</div>
+    </div>
+
+    <div class="part">PARTIE 1 – CONNAISSANCES (/7)</div>
+    <p class="q">1. En quelle année Playtime Co. a-t-elle été fondée, et par qui ?</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">2. Qui est Oliver et quel est son lien avec le Prototype ?</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">3. Que s’est-il passé le 8 août 1995 ?</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">4. Cite trois fonctions du GrabPack.</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+
+    <div class="part green">PARTIE 2 – PERSONNAGES & LORE (/6)</div>
+    <p class="q">5. Présente Poppy (origine, rôle, personnalité).</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">6. Pourquoi le Prototype est-il un antagoniste intéressant ?</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <div class="answer"></div>
+
+    <div class="part purple">PARTIE 3 – RÉFLEXION (/7)</div>
+    <p class="q">7. Le joueur est-il encore totalement humain à la fin du Chapter 5 ? Justifie.</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">8. Propose une théorie sur le Chapter 6 (avec indices du jeu).</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">9. Quel rôle joue le Poppy Gel dans l’histoire ?</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+    <p class="q">10. Sort de Huggy et Kissy à la fin du Chapter 5 ?</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+
+    <p class="total">Total : ______ / 20</p>
+    <p class="apprec">Appréciation : ________________________________________________</p>
+    <div class="answer"></div>
+  </div>
+</body>
+</html>

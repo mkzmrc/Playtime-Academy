@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche Personnages – Playtime Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.5; padding: 40px 20px; }
+    .toolbar { position: fixed; top: 16px; right: 16px; display: flex; gap: 10px; z-index: 100; }
+    .btn { padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; border: none; cursor: pointer; font-family: inherit; }
+    .btn-print { background: #3b82f6; color: white; }
+    .btn-back { background: #e2e8f0; color: #1e293b; }
+    .page { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #64748b; margin-bottom: 24px; font-size: 14px; }
+    .info { display: flex; gap: 24px; margin-bottom: 28px; font-size: 14px; }
+    .info span { border-bottom: 1px solid #cbd5e1; min-width: 160px; display: inline-block; }
+    h2 { font-size: 15px; color: #3b82f6; margin: 20px 0 10px; }
+    .field { font-size: 14px; margin: 8px 0; }
+    .line { border-bottom: 1px solid #e2e8f0; display: inline-block; min-width: 280px; }
+    .answer { border-bottom: 1px solid #cbd5e1; height: 26px; margin: 6px 0; }
+    @media print {
+      body { background: white; padding: 0; }
+      .toolbar { display: none; }
+      .page { box-shadow: none; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html" class="btn btn-back">← Retour</a>
+    <button onclick="window.print()" class="btn btn-print">🖨 Imprimer</button>
+  </div>
+  <div class="page">
+    <h1>Fiche élève – Personnages</h1>
+    <p class="subtitle">Playtime Academy</p>
+    <div class="info">
+      <div>Nom : <span></span></div>
+      <div>Classe : <span></span></div>
+    </div>
+
+    <h2>1. Le Joueur</h2>
+    <p class="field">Rôle : <span class="line"></span></p>
+    <p class="field">Particularités :</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+
+    <h2>2. Poppy</h2>
+    <p class="field">Qui est-elle vraiment ? <span class="line"></span></p>
+    <p class="field">Son objectif : <span class="line"></span></p>
+    <p class="field">Pourquoi est-elle ambiguë ?</p>
+    <div class="answer"></div>
+
+    <h2>3. Le Prototype</h2>
+    <p class="field">Vrai nom : <span class="line"></span></p>
+    <p class="field">Rôle dans l’Hour of Joy : <span class="line"></span></p>
+    <p class="field">Ce qui le rend dangereux :</p>
+    <div class="answer"></div>
+
+    <h2>4. Choisis un autre personnage (Huggy / Kissy / CatNap / Giblet)</h2>
+    <p class="field">Personnage choisi : <span class="line"></span></p>
+    <p class="field">Apparence : <span class="line"></span></p>
+    <p class="field">Rôle dans l’histoire :</p>
+    <div class="answer"></div>
+    <p class="field">Ce qui t’intéresse chez lui/elle :</p>
+    <div class="answer"></div>
+    <div class="answer"></div>
+  </div>
+</body>
+</html>

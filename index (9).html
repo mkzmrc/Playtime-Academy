@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frise visuelle – Playtime Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; background: #0b1220; color: #e2e8f0; line-height: 1.5; padding: 40px 20px; min-height: 100vh; }
+    .toolbar { position: fixed; top: 16px; right: 16px; display: flex; gap: 10px; z-index: 100; }
+    .btn { padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; border: none; cursor: pointer; font-family: inherit; }
+    .btn-print { background: #3b82f6; color: white; }
+    .btn-back { background: #1e293b; color: #e2e8f0; border: 1px solid #334155; }
+    h1 { text-align: center; font-size: 28px; margin-bottom: 8px; }
+    .subtitle { text-align: center; color: #64748b; margin-bottom: 40px; }
+    .timeline { max-width: 700px; margin: 0 auto; position: relative; padding-left: 30px; }
+    .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 3px; background: linear-gradient(#3b82f6, #8b5cf6); border-radius: 2px; }
+    .event { position: relative; margin-bottom: 28px; padding-left: 24px; }
+    .event::before { content: ''; position: absolute; left: -26px; top: 6px; width: 14px; height: 14px; background: #3b82f6; border-radius: 50%; border: 3px solid #0b1220; }
+    .year { font-weight: 800; color: #60a5fa; font-size: 15px; margin-bottom: 2px; }
+    .desc { color: #cbd5e1; font-size: 14px; }
+    @media print {
+      body { background: white; color: #1e293b; }
+      .toolbar { display: none; }
+      .timeline::before { background: #3b82f6; }
+      .year { color: #1e40af; }
+      .desc { color: #334155; }
+      .event::before { border-color: white; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html" class="btn btn-back">← Retour</a>
+    <button onclick="window.print()" class="btn btn-print">🖨 Imprimer</button>
+  </div>
+  <h1>Timeline Poppy Playtime</h1>
+  <p class="subtitle">1930 → 2005</p>
+  <div class="timeline">
+    <div class="event"><div class="year">1930</div><div class="desc">Elliot Ludwig fonde Playtime Co.</div></div>
+    <div class="event"><div class="year">1949</div><div class="desc">Naissance de Poppy Ludwig</div></div>
+    <div class="event"><div class="year">Années 1980</div><div class="desc">Création du Poppy Gel. Elliot expérimente sur Oliver → Prototype. Puis ressuscite Poppy.</div></div>
+    <div class="event"><div class="year">1989</div><div class="desc">Mort d’Elliot Ludwig</div></div>
+    <div class="event"><div class="year">1990</div><div class="desc">Harley Sawyer lance la Bigger Bodies Initiative</div></div>
+    <div class="event"><div class="year">8 août 1995</div><div class="desc">The Hour of Joy – Massacre des employés par les jouets</div></div>
+    <div class="event"><div class="year">1995 – 2005</div><div class="desc">Les jouets restent dans l’usine. Guerre interne. Poppy enfermée.</div></div>
+    <div class="event"><div class="year">2005</div><div class="desc">Le joueur revient dans l’usine (début du jeu)</div></div>
+  </div>
+</body>
+</html>
