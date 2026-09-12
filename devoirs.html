@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche de Devoirs – Playtime Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.5; padding: 40px 20px; }
+    .toolbar { position: fixed; top: 16px; right: 16px; display: flex; gap: 10px; z-index: 100; }
+    .btn { padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; border: none; cursor: pointer; font-family: inherit; }
+    .btn-print { background: #3b82f6; color: white; }
+    .btn-back { background: #e2e8f0; color: #1e293b; }
+    .page { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #64748b; margin-bottom: 24px; font-size: 14px; }
+    .info { display: flex; gap: 24px; margin-bottom: 28px; font-size: 14px; }
+    .info span { border-bottom: 1px solid #cbd5e1; min-width: 160px; display: inline-block; }
+    h2 { font-size: 15px; color: #3b82f6; margin: 22px 0 10px; }
+    p { font-size: 14px; margin-bottom: 8px; }
+    ul { margin: 8px 0 12px 20px; font-size: 14px; }
+    .bareme { background: #f1f5f9; padding: 14px 18px; border-radius: 8px; margin-top: 24px; font-size: 14px; }
+    @media print {
+      body { background: white; padding: 0; }
+      .toolbar { display: none; }
+      .page { box-shadow: none; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html" class="btn btn-back">← Retour</a>
+    <button onclick="window.print()" class="btn btn-print">🖨 Imprimer</button>
+  </div>
+  <div class="page">
+    <h1>Fiche de Devoirs – Poppy Playtime</h1>
+    <p class="subtitle">Playtime Academy</p>
+    <div class="info">
+      <div>Nom : <span></span></div>
+      <div>À rendre pour le : <span></span></div>
+    </div>
+
+    <h2>Devoir 1 – Frise chronologique ( /5 )</h2>
+    <p>Réalise une frise de 1930 à 2005 avec au moins 8 événements importants. Tu peux l’illustrer.</p>
+
+    <h2>Devoir 2 – Portrait de personnage ( /5 )</h2>
+    <p>Choisis un personnage et rédige un portrait de 15 à 20 lignes :</p>
+    <ul>
+      <li>Apparence</li>
+      <li>Rôle dans l’histoire</li>
+      <li>Personnalité</li>
+      <li>Ce qui le rend intéressant ou flippant</li>
+    </ul>
+
+    <h2>Devoir 3 – Théorie argumentée ( /5 )</h2>
+    <p>Propose une théorie sur la suite de l’histoire (Chapter 6).</p>
+    <p>Tu dois :</p>
+    <ul>
+      <li>Énoncer clairement ta théorie</li>
+      <li>Donner au moins 3 indices tirés du jeu</li>
+      <li>Expliquer pourquoi tu y crois</li>
+    </ul>
+    <p>Longueur : 20-25 lignes minimum.</p>
+
+    <div class="bareme">
+      <strong>Barème</strong><br>
+      Devoir 1 : /5<br>
+      Devoir 2 : /5<br>
+      Devoir 3 : /5<br>
+      Soin et présentation : /5<br>
+      <strong>Total : /20</strong>
+    </div>
+  </div>
+</body>
+</html>

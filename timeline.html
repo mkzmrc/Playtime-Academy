@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiche Timeline – Playtime Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Nunito', Arial, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.5; padding: 40px 20px; }
+    .toolbar { position: fixed; top: 16px; right: 16px; display: flex; gap: 10px; z-index: 100; }
+    .btn { padding: 10px 18px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; border: none; cursor: pointer; font-family: inherit; }
+    .btn-print { background: #3b82f6; color: white; }
+    .btn-back { background: #e2e8f0; color: #1e293b; }
+    .page { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    h1 { font-size: 24px; margin-bottom: 8px; color: #1e293b; }
+    .subtitle { color: #64748b; margin-bottom: 24px; font-size: 14px; }
+    .info { display: flex; gap: 24px; margin-bottom: 28px; font-size: 14px; }
+    .info span { border-bottom: 1px solid #cbd5e1; min-width: 180px; display: inline-block; }
+    h2 { font-size: 16px; color: #3b82f6; margin: 24px 0 12px; }
+    .line { border-bottom: 1px solid #e2e8f0; margin: 14px 0; padding-bottom: 4px; font-size: 14px; }
+    .q { margin: 16px 0 6px; font-size: 14px; font-weight: 600; }
+    .answer { border-bottom: 1px solid #cbd5e1; height: 28px; margin-bottom: 8px; }
+    .answer-lg { border-bottom: 1px solid #cbd5e1; height: 28px; margin-bottom: 6px; }
+    @media print {
+      body { background: white; padding: 0; }
+      .toolbar { display: none; }
+      .page { box-shadow: none; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="../index.html" class="btn btn-back">← Retour</a>
+    <button onclick="window.print()" class="btn btn-print">🖨 Imprimer</button>
+  </div>
+  <div class="page">
+    <h1>Fiche élève – Timeline Poppy Playtime</h1>
+    <p class="subtitle">Playtime Academy</p>
+    <div class="info">
+      <div>Nom : <span></span></div>
+      <div>Classe : <span></span></div>
+      <div>Date : <span></span></div>
+    </div>
+    <h2>Complète la frise avec les événements importants</h2>
+    <div class="line">1930 : _______________________________________________________________</div>
+    <div class="line">1949 : _______________________________________________________________</div>
+    <div class="line">Années 1980 : ________________________________________________________</div>
+    <div class="line">1989 : _______________________________________________________________</div>
+    <div class="line">1990 : _______________________________________________________________</div>
+    <div class="line">8 août 1995 : ________________________________________________________</div>
+    <div class="line">1995 → 2005 : ________________________________________________________</div>
+    <div class="line">2005 : _______________________________________________________________</div>
+    <h2>Questions</h2>
+    <p class="q">1. Qui a fondé Playtime Co. ?</p>
+    <div class="answer"></div>
+    <p class="q">2. Qu’est-ce que le Poppy Gel et qui l’a créé ?</p>
+    <div class="answer-lg"></div>
+    <div class="answer-lg"></div>
+    <p class="q">3. Que s’est-il passé pendant l’Hour of Joy ?</p>
+    <div class="answer-lg"></div>
+    <div class="answer-lg"></div>
+    <p class="q">4. Pourquoi le joueur revient-il dans l’usine en 2005 ?</p>
+    <div class="answer-lg"></div>
+    <div class="answer-lg"></div>
+  </div>
+</body>
+</html>
