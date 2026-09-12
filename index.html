@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playtime Academy – Ressources pédagogiques Poppy Playtime</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="logo.png" alt="Playtime Academy" class="logo-img">
+        <div>
+          <h1>Playtime Academy</h1>
+          <p class="tagline">Ressources pédagogiques • Poppy Playtime</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#packs">Packs</a>
+        <a href="#fiches">Fiches</a>
+        <a href="#evaluation">Évaluations</a>
+        <a href="#apropos">À propos</a>
+        <button onclick="document.body.classList.toggle('mode-cours')" class="btn-mode" title="Mode cours">Mode cours</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Enseigne <span>Poppy Playtime</span><br>sans te prendre la tête</h2>
+        <p>Séquences prêtes à l’emploi, fiches élèves et évaluations pour le collège et le lycée. Consulte-les en ligne ou imprime-les directement.</p>
+        <div class="hero-buttons">
+          <a href="#fiches" class="btn primary">Voir les fiches</a>
+          <a href="#evaluation" class="btn secondary">Voir les évaluations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packs" class="section">
+    <div class="container">
+      <h2 class="section-title">Packs de cours</h2>
+      <p class="section-desc">Dossier enseignant + ressources visuelles.</p>
+      
+      <div class="cards">
+        <div class="card featured">
+          <div class="card-badge">Recommandé</div>
+          <h3>Séquence complète</h3>
+          <p>Le dossier enseignant avec les 6 séances, les objectifs, les conseils et toute la structure.</p>
+          <ul>
+            <li>6 séances détaillées</li>
+            <li>Objectifs + compétences</li>
+            <li>Conseils pour l’enseignant</li>
+          </ul>
+          <a href="Dossier_Pedagogique_Poppy_Playtime.docx" class="btn primary btn-small" download>Télécharger le dossier</a>
+        </div>
+
+        <div class="card">
+          <div class="card-badge blue">Visuel</div>
+          <h3>Frise chronologique</h3>
+          <p>Timeline visuelle de 1930 à 2005, idéale à projeter.</p>
+          <ul>
+            <li>Tous les événements clés</li>
+            <li>Design clair</li>
+            <li>Imprimable</li>
+          </ul>
+          <a href="fiches/frise.html" class="btn primary btn-small">Ouvrir / Imprimer</a>
+        </div>
+
+        <div class="card">
+          <div class="card-badge purple">Enseignant</div>
+          <h3>Corrigé enseignant</h3>
+          <p>Réponses de l’évaluation + rappels timeline.</p>
+          <ul>
+            <li>Corrigé partie connaissances</li>
+            <li>Pistes pour l’analyse</li>
+            <li>Ne pas distribuer aux élèves</li>
+          </ul>
+          <a href="fiches/corrige-enseignant.html" class="btn primary btn-small">Ouvrir</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fiches" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Fiches élèves</h2>
+      <p class="section-desc">Ouvre la fiche, utilise-la en cours ou imprime-la.</p>
+      
+      <div class="fiche-list">
+        <div class="fiche-item">
+          <div class="fiche-left">
+            <div class="fiche-num">01</div>
+            <div class="fiche-info">
+              <h4>Fiche Timeline</h4>
+              <p>Frise à compléter + questions</p>
+            </div>
+          </div>
+          <a href="fiches/timeline.html" class="btn secondary btn-small">Ouvrir / Imprimer</a>
+        </div>
+
+        <div class="fiche-item">
+          <div class="fiche-left">
+            <div class="fiche-num">02</div>
+            <div class="fiche-info">
+              <h4>Fiche Personnages</h4>
+              <p>Player, Poppy, Prototype, Huggy, Kissy…</p>
+            </div>
+          </div>
+          <a href="fiches/personnages.html" class="btn secondary btn-small">Ouvrir / Imprimer</a>
+        </div>
+
+        <div class="fiche-item">
+          <div class="fiche-left">
+            <div class="fiche-num">03</div>
+            <div class="fiche-info">
+              <h4>Fiche de Devoirs</h4>
+              <p>Frise + Portrait + Théorie argumentée</p>
+            </div>
+          </div>
+          <a href="fiches/devoirs.html" class="btn secondary btn-small">Ouvrir / Imprimer</a>
+        </div>
+
+        <div class="fiche-item">
+          <div class="fiche-left">
+            <div class="fiche-num">04</div>
+            <div class="fiche-info">
+              <h4>GrabPack & Mécaniques</h4>
+              <p>Les mains, l’évolution, Glowby…</p>
+            </div>
+          </div>
+          <a href="fiches/mecaniques.html" class="btn secondary btn-small">Ouvrir / Imprimer</a>
+        </div>
+
+        <div class="fiche-item">
+          <div class="fiche-left">
+            <div class="fiche-num">05</div>
+            <div class="fiche-info">
+              <h4>Fiche Théories</h4>
+              <p>Espace pour formuler et argumenter des théories</p>
+            </div>
+          </div>
+          <a href="fiches/theories.html" class="btn secondary btn-small">Ouvrir / Imprimer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="evaluation" class="section">
+    <div class="container">
+      <h2 class="section-title">Évaluations</h2>
+      <p class="section-desc">Sujets prêts à l’emploi, consultables et imprimables.</p>
+      
+      <div class="cards two">
+        <div class="card">
+          <div class="card-badge">Principale</div>
+          <h3>Évaluation complète</h3>
+          <p>12 questions • Connaissances + Lore + Réflexion</p>
+          <p class="meta">45-60 min</p>
+          <a href="fiches/evaluation.html" class="btn primary btn-small">Ouvrir / Imprimer</a>
+        </div>
+        <div class="card">
+          <h3>Évaluation courte</h3>
+          <p>Version allégée pour une interro rapide</p>
+          <p class="meta">25-30 min</p>
+          <a href="fiches/evaluation-courte.html" class="btn primary btn-small">Ouvrir / Imprimer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos" class="section alt">
+    <div class="container">
+      <h2 class="section-title">À propos</h2>
+      <div class="about-content">
+        <p><strong>Playtime Academy</strong> est un petit projet de ressources pédagogiques autour de l’univers de Poppy Playtime.</p>
+        <p>L’idée est simple : permettre aux enseignants d’utiliser ce jeu comme support pour travailler la narration, les personnages, l’esprit critique et l’organisation d’informations, sans forcément faire jouer les élèves.</p>
+        <p>Tout est pensé pour le collège et le lycée. Les fiches s’ouvrent directement dans le navigateur et peuvent être imprimées en un clic.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Playtime Academy</p>
+      <p class="small">Ressources pédagogiques Poppy Playtime</p>
+    </div>
+  </footer>
+</body>
+</html>
